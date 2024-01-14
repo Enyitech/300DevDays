@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    color: #202124;
+    line-height: 1.6;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #4A4D50;
+}
+
+.navbar{
+    background-color: #fff;
+    color: #4A4D50;
+    height: 100px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.navbar a{
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: 1px #4A4D50 solid;
+}
+/*Showcase*/
+.showcase{
+    height: 548px;
+    background-color: #f8f8f8;
+    position: relative;
+}
+.showcase h1{
+    font-size: 40px;
+}
+.showcase p{
+    margin: 10px 0;
+}
+.showcase img{
+    width: 533px;
+    height: 548px;
+}
+.showcase-text{
+    height: 150px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 1100px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+
+}
+.showcase-info img{
+    height: 80px;
+}
+.showcase-info{
+    background-color: #1E1E1E;
+    height: 150px;
+    color: #fff;
+    border-radius: 8px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*Utilities*/
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.btn{
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+    background: linear-gradient( 0.18turn, #F9C8BF, #F87C61, #AB26F8, #D75EFC);
+}
+.btn-outline{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: #1E1E1E;
+    margin-top: 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid_1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid_2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+/* Tablets and under */
+@media(max-width: 768px) {
+    .grid,
+    .showcase,
+    .showcase-info
+    .showcase-text{
+        grid-template-columns: 1fr;
+    }
+    
+
+}
+/* Mobile */
+@media(max-width: 500px){
+    .navbar{
+        height: 110px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        padding: 10px;
+    }
+}
